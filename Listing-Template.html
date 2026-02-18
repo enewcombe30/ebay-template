@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eBay Listing Template</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f5f5f5;
+        color: #222;
+        line-height: 1.5;
+      }
+
+      .listing-wrap {
+        max-width: 900px;
+        margin: 24px auto;
+        background-color: #fff;
+        border: 1px solid #ddd;
+      }
+
+      .header {
+        padding: 20px;
+        border-bottom: 1px solid #ddd;
+        background-color: #fafafa;
+      }
+
+      .header h1 {
+        margin: 0;
+        font-size: 28px;
+      }
+
+      .subtitle {
+        margin-top: 6px;
+        color: #555;
+        font-size: 14px;
+      }
+
+      .section {
+        padding: 20px;
+        border-bottom: 1px solid #eee;
+      }
+
+      .section:last-child {
+        border-bottom: none;
+      }
+
+      .section h2 {
+        margin: 0 0 12px;
+        font-size: 20px;
+        color: #111;
+      }
+
+      .image-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .image-box {
+        border: 1px dashed #bbb;
+        background-color: #fcfcfc;
+        min-height: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #888;
+        font-size: 14px;
+        text-align: center;
+        padding: 10px;
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 20px;
+      }
+
+      .two-col {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+      }
+
+      .muted {
+        color: #666;
+        font-size: 13px;
+      }
+
+      @media (max-width: 700px) {
+        .image-grid,
+        .two-col {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="listing-wrap">
+      <header class="header">
+        <h1>Product Title Goes Here</h1>
+        <div class="subtitle">Brand | Model | Condition</div>
+      </header>
+
+      <section class="section">
+        <h2>Product Images</h2>
+        <div class="image-grid">
+          <div class="image-box">Main Product Image</div>
+          <div class="image-box">Image 2</div>
+          <div class="image-box">Image 3</div>
+          <div class="image-box">Image 4</div>
+        </div>
+        <p class="muted">
+          Replace placeholders with your hosted image links or uploaded eBay
+          photos.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Description</h2>
+        <p>
+          Add a clear, honest description of the item. Include condition
+          details, what is included, and any signs of wear or defects.
+        </p>
+        <ul>
+          <li>Key feature or specification #1</li>
+          <li>Key feature or specification #2</li>
+          <li>Key feature or specification #3</li>
+        </ul>
+      </section>
+
+      <section class="section two-col">
+        <div>
+          <h2>Shipping</h2>
+          <ul>
+            <li>Ships within 1 business day</li>
+            <li>Carefully packed</li>
+            <li>Tracking provided</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Returns</h2>
+          <ul>
+            <li>30-day returns accepted</li>
+            <li>Buyer pays return shipping</li>
+            <li>Item must be returned in original condition</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Notes</h2>
+        <p>
+          Feel free to message with questions before purchasing. Thanks for
+          viewing this listing!
+        </p>
+      </section>
+    </div>
+  </body>
+</html>
